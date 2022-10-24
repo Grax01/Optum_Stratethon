@@ -16,7 +16,7 @@ import csv
 import pandas as pd
 from bson.objectid import ObjectId
 from pymongo import MongoClient
-mongopass="mongodb+srv://Token360:NAMANjaypee62@cluster0.ctbm1h1.mongodb.net/?retryWrites=true&w=majority"
+mongopass="mongodb+srv://@cluster0.ctbm1h1.mongodb.net/?retryWrites=true&w=majority"
 salt="optum"
 app = Flask(__name__)
 app.config['SECRET_KEY'] = "OPTUM Startathon"
@@ -30,7 +30,7 @@ ambulanceRequest=db.ambulanceRequest
 print('myCollection')
 print(myCollection)
 API_KEY = ''
-# https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=27.216502,77.974229&radius=1500&type=hospitale&key=AIzaSyCoFYgYlDennI9RkvvyWfMM86v_goIyBzk
+# https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=27.216502,77.974229&radius=1500&type=hospitale&key=
 df = pd.read_csv('disease.csv')
 df.to_csv('disease.csv', index=None)
 
